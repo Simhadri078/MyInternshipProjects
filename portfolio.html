@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <style>
+        * {
+            background-color: rgb(74, 78, 105);
+            color: white;
+            align-items: center;
+        }
+
+        .center {
+            display: block;
+            justify-content: center;
+            align-content: center
+        }
+
+        .main {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            height: 400px;
+        }
+
+        .typing-effect .heading {
+            text-decoration: none;
+            animation: typing 2s steps(20) infinite;
+        }
+        @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+        .profile_photo {
+            width: 400px;
+            height: 400px;
+            display: contents;
+            align-content: center;
+            
+        }
+
+        .profile_photo img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: white;
+            margin-left: 20px;
+        }
+
+        .about p {
+            text-align: justify;
+            width: 500px;
+        }
+
+        .accounts a {
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .accounts ul {
+            display: flex;
+        }
+
+        .accounts ul li {
+            width: 90px;
+        }
+
+        .grades {
+            display: flex;
+            justify-content: space-around;
+            background-color: #DBDCE1;
+            color: rgb(74, 78, 105);
+            
+        }
+
+        .gg p {
+            background-color: #DBDCE1;
+            color: rgb(74, 78, 105);
+        }
+        .gg{
+            display: block;
+            align-items: center;
+        }
+        .edu_details {
+            width: 600px;
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: block;
+            background-color: #DBDCE1;
+            padding: 1%;
+            border-radius: 15px; /* Add border radius */
+  margin-top: 20px;
+        }
+        
+        .edu_details h1 {
+            background-color: #DBDCE1;
+            color: rgb(74, 78, 105);
+        }
+        .skills{
+            position: absolute;
+            top: 130%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 600px;
+            background-color: white;
+            color: rgb(74, 78, 105);
+            padding: 1%;
+            border-radius: 15px; /* Add border radius */
+  margin-top: 20px;
+        }
+        .projects{
+            position: absolute;
+            top: 200%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: block;
+            border: 4px solid;
+            border-color: white;
+            border-radius: 15px; /* Add border radius */
+  margin-top: 20px;
+  padding: 1%;
+
+        }
+        .grades div {
+            width: 500px;
+            background-color: #DBDCE1;
+            color: rgb(74, 78, 105);
+        }
+
+        .skills img {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            color: rgb(74, 78, 105);
+        }
+        .skills h1{
+            background-color: white;
+            color: rgb(74, 78, 105);
+        }
+        .skills_flex {
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            color: rgb(74, 78, 105);
+        }
+        .skills_flex h3{
+            background-color: white;
+            color: rgb(74, 78, 105);
+        }
+        .flex_item{
+            background-color: white;
+            color: rgb(74, 78, 105);
+            align-items: center;
+        }
+        .img1 img,
+        .img2 img {
+            height: 200px;
+            width: 400px;
+            border-radius: 10px;
+        }
+
+        .project1,
+        .project2 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .description p {
+
+            text-align: justify;
+        }
+
+        .description {
+            width: 600px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <div class="main">
+            <div class="item1">
+                <div class="name">
+                    <h1 class="heading typing-effect"></h1>
+                </div>
+                <div class="about">
+                    <h1>About Me</h1>
+                    <p>I am a second year student pursuing computer science and engineering in Chaitanya Bharathi
+                        Institute of Technology</p>
+                    <div class="accounts">
+                        <ul>
+                            <li><a href="https://github.com/Simhadri078">Github</a></li>
+                            <li><a href="https://www.linkedin.com/in/lavuri-simhadri-b65219244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></li>
+                            <li><a href="mailto:lavoorichanti2662@gmail.com">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item2">
+                <div class="profile_photo"><img src="profilepic.jpeg" alt="profile photo"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="edu_details">
+            <h1>Educational Detalis</h1>
+            <div class="grades">
+                <div class="gg">
+                    <p>Bachelor of engineering</p>
+                    <p>CBIT</p>
+                    <p>88.9%</p>
+                </div>
+                <div class="gg">
+                    <p>Intermmediate</p>
+                    <p>Pragathi Junior College</p>
+                    <p>97.5%</p>
+                </div>
+                <div class="gg">
+                    <p>SSC</p>
+                    <p>ZPP High School</p>
+                    <p>10.0</p>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <h1>Skills</h1>
+            <div class="skills_flex">
+                <div class="flex_item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
+                        alt="python">
+                    <h3>Python</h3>
+                </div>
+                <div class="flex_item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
+                        alt="html">
+                    <h3>HTML</h3>
+                </div>
+                <div class="flex_item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                        alt="CSS">
+                    <h3>CSS</h3>
+                </div>
+                <div class="flex_item">
+                    <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/java_logo_icon_169577.png" alt="java">
+                    <h3>Java</h3>
+                </div>
+            </div>
+        </div>
+        <div class="projects">
+            <h1>Projects</h1>
+            <div class="project1">
+                <div class="img1"><img src="project1.png" alt="project1"></div>
+                <div class="description">
+                    <h3>Online integrated platform for projects taken up by the students of various universities
+                        /colleges
+                    </h3>
+                    <p>Innovation is the key to betterment of education and students in the Indian universities/colleges
+                        put a lot of efforts on the projects as a part of the academic requirements. If a common
+                        knowledge platform (with a facility for plagiarism) is created to bring all project works taken
+                        up at various levels by the students in Technical / Higher Educational Institutes and
+                        Universities throughout the country, then it will be a great source of knowledge and also will
+                        help the student community to take up unique/innovative project works</p>
+                </div>
+            </div>
+            <div class="project2">
+                <div class="img2"><img src="project2.png" alt="project2"></div>
+                <div class="description">
+                    <h3>Neighborhood Safety Network platform to empower residents in enhancing community safety</h3>
+                    <p>Develop an online platform that enables residents to report safety incidents, receive real-time
+                        safety alerts, communicate with neighbors, and collaborate with local law enforcement. This
+                        platform should facilitate residents in reporting safety incidents, staying updated with
+                        real-time safety alerts, communicating with neighbors, and coordinating with local law
+                        enforcement. Key features include incident reporting, safety alerts, community chat, community
+                        engagement, safety resources, and integration with law enforcement. This platform aims to
+                        enhance community safety and connectivity.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
